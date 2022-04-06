@@ -74,6 +74,6 @@ public class HomeController extends Controller {
 
         postService.addPost(boundForm.get());
 
-        return supplyAsync(() -> redirect(routes.HomeController.getPosts(null)), ec.current();
+        return supplyAsync(() -> redirect(routes.HomeController.getPosts(null)), ec.current());
     }
 }
